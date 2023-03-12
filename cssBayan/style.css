@@ -13,12 +13,12 @@
         transition: 1s;
     }
     .header {
-    font-size: 3em;
+    font-size: 3.5em;
     font-family: 'Inika', serif;
     border-bottom: solid #D3D3D3 0.05em;
     }
     .section {
-    font-size: 1.5em;
+    font-size: 2em;
     color: blue;
     font-family: 'Smokum', cursive;
     border-bottom: solid #D3D3D3 0.05em;
@@ -95,6 +95,13 @@
         height: 0;
         overflow: hidden;
     }
+    .picture1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10em;
+        overflow: hidden;
+    }
     img {
         width: 10em;
         height: 10em;
@@ -114,6 +121,14 @@
     button.firstbtn:active + img{
         filter: grayscale(1);
         transition: filter 1s ease-in-out;
+    }
+    @media only all and (max-width: 1920px){
+        .header {
+            font-size: 3em;
+        }
+        .section {
+            font-size: 1.5em;
+        }
     }
     @media only all and (max-width: 820px) {
         .section {
