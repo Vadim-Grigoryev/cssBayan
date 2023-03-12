@@ -116,11 +116,14 @@
         visibility: hidden;
     }
     .firstbtn {
-        order:3
+        order:3;
     }
     button.firstbtn:active + img{
         filter: grayscale(1);
         transition: filter 1s ease-in-out;
+    }
+    .button:hover {
+        cursor: pointer;
     }
     @media only all and (max-width: 1920px){
         .header {
@@ -140,6 +143,9 @@
             font-family: 'Golos Text', sans-serif;
     }
         .container:hover{
+            cursor: auto;
+        }
+        .button:hover {
             cursor: auto;
         }
     }
